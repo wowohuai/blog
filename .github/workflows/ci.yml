@@ -8,7 +8,7 @@ on:
     branches: [ main ]
 
 jobs:
-  cache-and-install:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -42,12 +42,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-
-  build-and-deploy:
-    needs: cache-and-install
-    runs-on: ubuntu-latest
-
-    steps:
+        
       - name: build
         run: pnpm generate
 
@@ -57,3 +52,6 @@ jobs:
           branches: gh-pages
           folder: .output/public
           ssh-key: ${{ secrets.ACCESS_TOKEN }}
+
+
+     
