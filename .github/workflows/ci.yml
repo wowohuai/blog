@@ -51,7 +51,7 @@ jobs:
         with:
           branch: gh-pages
           folder: .output/public
-          ssh-key: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
 
 
      
