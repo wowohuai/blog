@@ -1,6 +1,9 @@
 import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/blog',
+  },
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
@@ -20,4 +23,5 @@ export default defineNuxtConfig({
   typescript: {
     typeCheck: true,
   },
+
 })
