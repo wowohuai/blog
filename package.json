@@ -3,10 +3,12 @@
   "packageManager": "pnpm@7.0.1",
   "scripts": {
     "build": "nuxi build",
+    "generate": "nuxi generate",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
     "lint": "eslint ."
   },
+  "homepage": "https://wowohuai.github.io/blog",
   "devDependencies": {
     "@antfu/eslint-config": "^0.23.0",
     "@iconify-json/carbon": "^1.1.4",
