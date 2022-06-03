@@ -49,7 +49,7 @@ jobs:
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branches: gh-pages
+          branch: gh-pages
           folder: .output/public
           ssh-key: ${{ secrets.ACCESS_TOKEN }}
 
